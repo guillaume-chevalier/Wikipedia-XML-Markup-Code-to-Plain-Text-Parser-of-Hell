@@ -1,0 +1,13 @@
+# requirements:
+mwparserfromhell==0.5.2
+#
+# jupyter notebooks, not sure if all of this is needed but this is what I had:
+#     pip freeze | grep -i notebo
+#     pip freeze | grep -i jupyter
+#
+notebook==5.7.4
+jupyter==1.0.0
+jupyter-client==5.2.4
+jupyter-console==6.0.0
+jupyter-core==4.4.0
+
