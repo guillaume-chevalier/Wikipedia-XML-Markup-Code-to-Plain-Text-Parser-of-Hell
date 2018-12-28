@@ -3,10 +3,10 @@
 
 > Dumping wikipedia to splitted txt files.
 
-Installation infos and how it works: 
+Installation infos and how it works:
 1. Edit `./data/config.py` to locate your article `.xml` wikipedia file extracted from the `.bz2` compressed file. This XML could weight as much as 60 GB. There might be a way to dynamically unzip it from within python without extracting it first, but here the XML is the starting point. In `./data/config.py`, also add your other paths for where you will want to save the txt dump files.
 2. Run `main.py` (which is the same code as in the readme/notebook) to launch the conversion.
-3. Later, you will be able to read the txt files from disk with the following class: `from data.read_write_txt import FilesReaderBinaryUTF8`. See an example usage commented at the bottom. 
+3. Later, you will be able to read the txt files from disk with the following class: `from data.read_write_txt import FilesReaderBinaryUTF8`. See an example usage commented at the bottom.
 
 
 
@@ -26,7 +26,7 @@ Installation infos and how it works:
     jupyter-client==5.2.4
     jupyter-console==6.0.0
     jupyter-core==4.4.0
-    
+
 
 
 
@@ -87,7 +87,7 @@ test_can_end_sentences_cleanly()
 
 
 ```python
-if __name__ == "__main__": 
+if __name__ == "__main__":
     convert_wikipedia_to_plain_txt(WIKIPEDIA_OUTPUT_UTF8_TXT_RAW_FILE, WIKIPEDIA_XML)
     # # Test:
     # with FilesReaderBinaryUTF8(WIKIPEDIA_OUTPUT_UTF8_TXT_RAW_FILE, verbose=True) as f:
@@ -3846,7 +3846,7 @@ if __name__ == "__main__":
     2018-12-24 10:33:14 - Writing to: /home/gui/wikipedia/extracted/working/english/utf8_dump.000000000003776.txt
 
 
-## License
+## License of the code
 
 BSD 3-Clause License
 
@@ -3854,4 +3854,3 @@ BSD 3-Clause License
 Copyright (c) 2018, Guillaume Chevalier
 
 All rights reserved.
-
